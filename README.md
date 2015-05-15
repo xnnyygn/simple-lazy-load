@@ -58,6 +58,6 @@ Anyway, compared with using the proxy object in this situtation, I found it's ea
 
 ## Limitation ##
 
-As you can see, you have to modify your domain model to use this simple lazy load solution. If your project don't allow you to change the domain model, for example, a very old school project and some models you're not allowed to modify, please refere to `Hibernate` for more information. `Hibernate` provides you with more options to adapt the old models and projects.
+As you can see, you have to modify your domain model to use this simple lazy load solution. If your project don't allow you to change the domain model, for example, a very old school project and some models with a long histroy, please refer to `Hibernate` for more information. `Hibernate` provides you with more options to adapt the old models and projects.
 
 As this solution is very simple, you can adapt it very quickly but you should notice that there's no concurrent control in `FutureValue`, make sure your models not using by multiple threads and you will have a very nice weekend. :)
